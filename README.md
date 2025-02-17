@@ -9,15 +9,23 @@ To hoveddeler, hvor den første hoveddelen handler om bakgrunn for språket, hvo
 ### Oppsett (30 min)
 
 - Intro til TypeScript
+- Motivasjon (få større verdi av eksterne rammeverk)
 - Kompilering, CLI
 - Oppsett og konfigurasjon
 
 ### Språket (120 min)
 
-- Interface og typer
-- Unions
+- Primitive typer, interface og typer
 - Utility typer
+- Template literals
+- Unions
+- Indeksert aksess
+- `keyof`
+- `typeof`
+- Mapped types
+- Satisfies?
 - Typetransformasjoner
 - Discriminated union
 - Generics
 - Avanserte bruksmåter
+- Tips for å jobbe med eksterne biblioteker
