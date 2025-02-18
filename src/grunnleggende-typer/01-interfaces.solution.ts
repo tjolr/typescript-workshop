@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/total-typescript-helpers";
+import { Equal, Expect } from "../.helpers/total-typescript-helpers";
 
 const konto: Konto = {
   id: "4321",
