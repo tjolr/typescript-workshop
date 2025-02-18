@@ -28,4 +28,5 @@ To hoveddeler, hvor den første hoveddelen handler om bakgrunn for språket, hvo
 - Discriminated union
 - Generics
 - Avanserte bruksmåter
+- Module declaration (override ext. libraries)
 - Tips for å jobbe med eksterne biblioteker
