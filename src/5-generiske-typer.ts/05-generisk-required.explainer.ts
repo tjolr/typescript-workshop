@@ -1,28 +1,39 @@
 import { Equal, Expect } from "../.helpers/total-typescript-helpers";
 
-type Melding<TPrioritet> = {
-  innhold: string;
-  prioritet: TPrioritet;
-  tidspunkt: Date;
+type FeltTypeMap = {
+  tall: number;
+  tekst: string;
+  prosent: number;
 };
 
-type Prioritet = "lav" | "medium" | "høy";
+type FeltKeys = keyof FeltTypeMap;
 
-const opprettMelding = <T extends Prioritet = never>(
-  innhold: string,
-  prioritet: T,
-): Melding<T> => {
+type Felt<T extends FeltKeys> = {
+  verdi: FeltTypeMap[T];
+};
+
+const opprettFelt = <T extends FeltKeys = never>(params: {
+  verdi: FeltTypeMap[T];
+}): Felt<T> => {
   return {
-    innhold,
-    prioritet,
-    tidspunkt: new Date(),
+    verdi: params.verdi,
   };
 };
 
-const høyPrioritet = opprettMelding<"høy">("Haster!", "høy");
-const lavPrioritet = opprettMelding<"lav">("Kan vente", "lav");
+const prosentFelt = opprettFelt<"prosent">({
+  verdi: 0.8,
+});
+
+const tekstFelt = opprettFelt<"tekst">({
+  verdi: "hei",
+});
+
+const tallFelt = opprettFelt<"tall">({
+  verdi: 42,
+});
 
 type tester = [
-  Expect<Equal<typeof høyPrioritet, Melding<"høy">>>,
-  Expect<Equal<typeof lavPrioritet, Melding<"lav">>>,
+  Expect<Equal<typeof prosentFelt, Felt<"prosent">>>,
+  Expect<Equal<typeof tekstFelt, Felt<"tekst">>>,
+  Expect<Equal<typeof tallFelt, Felt<"tall">>>,
 ];
