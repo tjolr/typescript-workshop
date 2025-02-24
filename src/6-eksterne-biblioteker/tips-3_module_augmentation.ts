@@ -14,12 +14,17 @@ interface Person {
   poststed: string;
 }
 
+interface Person {
+  telefonnummer: string;
+}
+
 const person: Person = {
   navn: "Ola Nordmann",
   alder: 40,
   gate: "Osloveien 12",
   postnummer: 7018,
   poststed: "Trondheim",
+  telefonnummer: "98765432",
 };
 
 // Module Augmentation
