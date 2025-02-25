@@ -13,6 +13,7 @@
     "@types/react": "^19.0.10",
     "axios": "^1.7.9",
     "jquery": "^3.7.1",
+    "react-hook-form": "^7.54.2",
     "vue": "^3.5.13"
   }
 }

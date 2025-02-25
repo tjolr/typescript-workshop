@@ -11,6 +11,7 @@ interface Row {
   // Indekserer attributtet "key" fra VirtualItem
   key: VirtualItem["key"];
 }
+
 const rows = ref<Row[]>([]);
 const virtualizedContainerRef = ref<HTMLElement | null>(null);
 
