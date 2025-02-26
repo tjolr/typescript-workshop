@@ -13,10 +13,10 @@ importers:
         version: 6.4.5(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@tanstack/vue-query':
         specifier: ^5.66.4
-        version: 5.66.4(vue@3.5.13(typescript@5.7.3))
+        version: 5.66.4(vue@3.5.13(typescript@5.7.2))
       '@tanstack/vue-virtual':
         specifier: ^3.13.0
-        version: 3.13.0(vue@3.5.13(typescript@5.7.3))
+        version: 3.13.0(vue@3.5.13(typescript@5.7.2))
       '@types/react':
         specifier: ^19.0.10
         version: 19.0.10
@@ -31,14 +31,14 @@ importers:
         version: 7.54.2(react@19.0.0)
       vue:
         specifier: ^3.5.13
-        version: 3.5.13(typescript@5.7.3)
+        version: 3.5.13(typescript@5.7.2)
     devDependencies:
       prettier:
         specifier: ^3.0.0
         version: 3.5.1
       typescript:
-        specifier: 5.7.3
-        version: 5.7.3
+        specifier: 5.7.2
+        version: 5.7.2
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -433,8 +433,8 @@ packages:
   stylis@4.2.0:
     resolution: {integrity: sha512-Orov6g6BB1sDfYgzWfTHDOxamtX1bE/zo104Dh9e6fqJ3PooipYyfJ0pUmrZO2wAvO8YbEyeFrkV91XTsGMSrw==}
 
-  typescript@5.7.3:
-    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -589,18 +589,18 @@ snapshots:
 
   '@tanstack/virtual-core@3.13.0': {}
 
-  '@tanstack/vue-query@5.66.4(vue@3.5.13(typescript@5.7.3))':
+  '@tanstack/vue-query@5.66.4(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@tanstack/match-sorter-utils': 8.19.4
       '@tanstack/query-core': 5.66.4
       '@vue/devtools-api': 6.6.4
-      vue: 3.5.13(typescript@5.7.3)
-      vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.3))
+      vue: 3.5.13(typescript@5.7.2)
+      vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.2))
 
-  '@tanstack/vue-virtual@3.13.0(vue@3.5.13(typescript@5.7.3))':
+  '@tanstack/vue-virtual@3.13.0(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@tanstack/virtual-core': 3.13.0
-      vue: 3.5.13(typescript@5.7.3)
+      vue: 3.5.13(typescript@5.7.2)
 
   '@types/prop-types@15.7.14': {}
 
@@ -660,11 +660,11 @@ snapshots:
       '@vue/shared': 3.5.13
       csstype: 3.1.3
 
-  '@vue/server-renderer@3.5.13(vue@3.5.13(typescript@5.7.3))':
+  '@vue/server-renderer@3.5.13(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
-      vue: 3.5.13(typescript@5.7.3)
+      vue: 3.5.13(typescript@5.7.2)
 
   '@vue/shared@3.5.13': {}
 
@@ -840,20 +840,20 @@ snapshots:
 
   stylis@4.2.0: {}
 
-  typescript@5.7.3: {}
+  typescript@5.7.2: {}
 
-  vue-demi@0.14.10(vue@3.5.13(typescript@5.7.3)):
+  vue-demi@0.14.10(vue@3.5.13(typescript@5.7.2)):
     dependencies:
-      vue: 3.5.13(typescript@5.7.3)
+      vue: 3.5.13(typescript@5.7.2)
 
-  vue@3.5.13(typescript@5.7.3):
+  vue@3.5.13(typescript@5.7.2):
     dependencies:
       '@vue/compiler-dom': 3.5.13
       '@vue/compiler-sfc': 3.5.13
       '@vue/runtime-dom': 3.5.13
-      '@vue/server-renderer': 3.5.13(vue@3.5.13(typescript@5.7.3))
+      '@vue/server-renderer': 3.5.13(vue@3.5.13(typescript@5.7.2))
       '@vue/shared': 3.5.13
     optionalDependencies:
-      typescript: 5.7.3
+      typescript: 5.7.2
 
   zod@3.24.2: {}
